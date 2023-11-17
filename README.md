@@ -14,7 +14,7 @@ Going one step forward in time from initial state:
 $$p_1 = \frac{1}{4} + \frac{1}{4} p_1 + \frac{1}{4} p_2 + \frac{1}{4} p_3$$
 Using independence, we have $p_i = p_1^i$, we rename $p_1$ to $p$ and get:
 $$p = \frac{1}{4} + \frac{1}{4} p + \frac{1}{4} p^2 + \frac{1}{4} p^3$$
-We can solve this third-degree polynomial and we get 3 solutions, only one of these being between $0$ and $1$: $p=\sqrt{2}-1$ which is the answer.
+We can solve this third-degree polynomial and we get 3 solutions, only one of these being between $0$ and $1$: $p=\sqrt{2}-1 ≃ 0.4142$ which is the answer.
 
 ## The algorithmic approach 
 
