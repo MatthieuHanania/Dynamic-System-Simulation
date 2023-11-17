@@ -9,8 +9,14 @@ What is the probability the amoeba population will die out?
 
 ## The mathematical approach 
 
+We define $p_i$ as the probability of extinction of the population of starting size $i$.
+Going one step forward in time from initial state:
+$$p_1 = \frac{1}{4} + \frac{1}{4} p_1 + \frac{1}{4} p_2 + \frac{1}{4} p_3$$
+Using independence, we have $p_i = p_1^i$, we rename $p_1$ to $p$ and get:
+$$p = \frac{1}{4} + \frac{1}{4} p + \frac{1}{4} p^2 + \frac{1}{4} p^3$$
+We can solve this third-degree polynomial and we get 3 solutions, only one of these being between $0$ and $1$: $p=\sqrt{2}-1$ which is the answer.
 
-## The algorithmical approach 
+## The algorithmic approach 
 
 We simulate the life cycle of the amoeba and its potential offspring over a series of iterations, each representing a minute in the simulation. 
 This method uses the Monte Carlo simulation technique, which repeated random sampling to obtain numerical results.
